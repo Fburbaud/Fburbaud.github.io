@@ -1,0 +1,41 @@
+html, body{
+    font-size: 20px;
+    background-color: black;
+}
+
+/* Nav */
+.eclipsenav{
+    width: 15em;
+    height: 15em;
+    border-radius: 0 0 0 100%;
+    background-color: #197419;
+    margin-left: auto;
+}
+.liensMenu{
+    font-family: monospace;
+}
+/* modifications liées à la partie responsive de la nav pour une petite tablette et smartphones */
+@media (max-width: 768px) {
+    .eclipsenav{
+        flex-wrap: nowrap;
+        width: 100%;
+        height: auto;
+        border-radius: 0;
+        justify-content: center !important;
+    }
+    .navUlResponsive{
+        flex-direction: row !important;
+    }
+}
+
+/* Partie centrale */
+.contenu{
+    background: #36286C;
+    border: 15px solid #2E225C;
+    box-sizing: border-box;
+}
+
+/* pour mettre en valeur certains mots*/
+.textGras{
+    font-weight: 500;
+}
